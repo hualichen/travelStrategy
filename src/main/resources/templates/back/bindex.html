@@ -35,62 +35,60 @@
 <body>
 <!--header-->
 <header>
- <h1><img src="back/images/admin_logo.png"/></h1>
- <ul class="rt_nav">
-  <li><a href="http://www.mycodes.net" target="_blank" class="website_icon">站点首页</a></li>
-  <li><a href="#" class="clear_icon">清除缓存</a></li>
-  <li><a href="#" class="admin_icon">DeathGhost</a></li>
-  <li><a href="#" class="set_icon">账号设置</a></li>
-  <li><a href="login"  th:href="@{login}" class="quit_icon">安全退出</a></li>
- </ul>
- 
+	<h1><img src="back/images/admin_logo.png"/></h1>
+	<ul class="rt_nav">
+		<li><a href="http://www.mycodes.net" target="_blank" class="website_icon">站点首页</a></li>
+		<li><a href="#" class="clear_icon">清除缓存</a></li>
+		<li><a href="#" class="admin_icon">DeathGhost</a></li>
+		<li><a href="#" class="set_icon">账号设置</a></li>
+		<li><a href="toPage?url=back/blogin"  class="quit_icon">安全退出</a></li>
+	</ul>
 </header>
-<!--aside nav-->
 <aside class="lt_aside_nav content mCustomScrollbar">
-	<h2><a href="index" th:href="@{index}">起始页</a></h2>
+	<h2><a href="toPage?url=back/bindex" >起始页</a></h2>
 	<ul>
  		<li>
 			<dl>
 				<dt>常用布局示例</dt>
-				<dd><a href="product_list" th:href="@{product_list}" class="active">商品列表示例</a></dd>
-				<dd><a href="product_detail" th:href="@{product_detail}">商品详情示例</a></dd>
-				<dd><a href="recycle_bin" th:href="@{recycle_bin}">商品回收站示例</a></dd>
+				<dd><a href="toPage?url=back/product_list"  class="active">商品列表示例</a></dd>
+				<dd><a href="toPage?url=back/product_detail" >商品详情示例</a></dd>
+				<dd><a href="toPage?url=back/recycle_bin" >商品回收站示例</a></dd>
 			</dl>
 		</li>
   		<li>
    			<dl>
 			    <dt>订单信息</dt>
-			    <dd><a href="order_list" th:href="@{order_list}">订单列表示例</a></dd>
-			    <dd><a href="order_detail" th:href="@{order_detail}">订单详情示例</a></dd>
+			    <dd><a href="toPage?url=back/order_list" >订单列表示例</a></dd>
+			    <dd><a href="toPage?url=back/order_detail" >订单详情示例</a></dd>
    			</dl>
   		</li>
  		<li>
    			<dl>
 			    <dt>会员管理</dt>
-			    <dd><a href="user_list" th:href="@{user_list}">会员列表示例</a></dd>
-			    <dd><a href="user_detail" th:href="@{user_detail}">添加会员（详情）示例</a></dd>
-			    <dd><a href="user_rank" th:href="@{user_rank}">会员等级示例</a></dd>
-			    <dd><a href="adjust_funding" th:href="@{adjust_funding}">会员资金管理示例</a></dd>
+			    <dd><a href="toPage?url=back/user_list" >会员列表示例</a></dd>
+			    <dd><a href="toPage?url=back/user_detail" >添加会员（详情）示例</a></dd>
+			    <dd><a href="toPage?url=back/user_rank" >会员等级示例</a></dd>
+			    <dd><a href="toPage?url=back/adjust_funding" >会员资金管理示例</a></dd>
    			</dl>
   		</li>
   		<li>
    			<dl>
 			    <dt>基础设置</dt>
-			    <dd><a href="setting" th:href="@{setting}">站点基础设置示例</a></dd>
+			    <dd><a href="toPage?url=back/setting" >站点基础设置示例</a></dd>
    			</dl>
   		</li>
   		<li>
    			<dl>
 			    <dt>配送与支付设置</dt>
-			    <dd><a href="express_list" th:href="@{express_list}">配送方式</a></dd>
-			    <dd><a href="pay_list" th:href="@{pay_list}">支付方式</a></dd>
+			    <dd><a href="toPage?url=back/express_list" >配送方式</a></dd>
+			    <dd><a href="toPage?url=back/pay_list" >支付方式</a></dd>
    			</dl>
   		</li>
   		<li>
 		   <dl>
 			   <dt>在线统计</dt>
-			   <dd><a href="discharge_statistic" th:href="@{discharge_statistic}">流量统计</a></dd>
-			   <dd><a href="sales_volume" th:href="@{sales_volume}">销售额统计</a></dd>
+			   <dd><a href="toPage?url=back/discharge_statistic" >流量统计</a></dd>
+			   <dd><a href="toPage?url=back/sales_volume" >销售额统计</a></dd>
 		   </dl>
   		</li>
 	    <li>
