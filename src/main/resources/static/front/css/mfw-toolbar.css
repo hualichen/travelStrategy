@@ -1,6 +1,6 @@
 /* 鍙充晶宸ュ叿鏍� */
 .mfw-toolbar{position: fixed; right:50%; bottom:20px; height: auto; margin-right:-558px; display:none;z-index:10;}
-.mfw-toolbar i{ background: url(/images/header-sprites9.png) no-repeat 0 0; display: inline-block;}
+.mfw-toolbar i{ background: url(../img/header-sprites9.png) no-repeat 0 0; display: inline-block;}
 .mfw-toolbar .icon_top{ width:21px; height:12px; background-position:-60px -165px; margin-top:16px;}
 .mfw-toolbar .icon_down{ width:21px; height:12px; background-position:-60px -185px; margin-top:16px;}
 .mfw-toolbar .icon_feedback{ width:18px; height:18px; background-position:-90px -165px; margin-top:13px;}
@@ -18,11 +18,11 @@
 .toolbar-item-code .mfw-code p{text-align: center; line-height: 27px; padding-top: 4px;}
 .toolbar-item-code a:hover{ text-decoration: none;}
 .wx-official-pop{border:1px solid #e5e5e5; position: absolute; right:55px; bottom:0; background-color:#fff; padding:6px;}
-.wx-official-pop i{position:absolute;right:3px;top:3px;width:25px;height:25px;background:url(/images/post/selectcats/close.png) no-repeat!important;cursor:pointer;}
+.wx-official-pop i{position:absolute;right:3px;top:3px;width:25px;height:25px;background:url(../img/post/selectcats/close.png) no-repeat!important;cursor:pointer;}
 
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-device-pixel-ratio: 2){
-    .mfw-toolbar i{ background-image: url(/images/header-sprites9@2x.png); background-size: 200px;} 
+    .mfw-toolbar i{ background-image: url(../img/header-sprites9@2x.png); background-size: 200px;} 
 }
 /* 1024鍒嗚鲸鐜囩殑鍏煎 */
 @media screen and (max-width: 1025px) {

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>我的信息</title>
+<script type="text/javascript">
+window.Env = {"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengwo.net","W_HTTP":"https:\/\/w.mafengwo.cn","P_HOST":"passport.mafengwo.cn","P_HTTP":"https:\/\/passport.mafengwo.cn","PAGELET_HTTP":"https:\/\/pagelet.mafengwo.cn","JS_HOST":"js.mafengwo.net","TONGJI_HOST":"tongji.mafengwo.cn","UID":75628957,"CSTK":"dab40e9751cc1317ee7128d7a17b528d_eb6258956525767fa7dc5d5690791060","GOOGLE_MAP_KEY":"AIzaSyD-Su0x_rPy1xehlMBcMyTqWkU49Bk53nQ","MOBILE_BINDED":true};
+</script>
+<link href="front/css/mfw-header.2015^YLVS^1559526017.css" rel="stylesheet" type="text/css"/>
+<link href="front/css/isettings.css" rel="stylesheet" type="text/css"/>
+<link href="front/css/jquery.Jcrop.css" rel="stylesheet" type="text/css"/>
+<link href="front/css/mfw-footer.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="front/js/mfw.verification^Z10^1559526936.js" type="text/javascript" crossorigin="anonymous"></script>
+<script language="javascript" src="front/js/inspector^alw^1556174996.js" type="text/javascript" crossorigin="anonymous"></script>
+<style>
+	    #banner-con-gloable{
+	        display: block;
+	        position: fixed;
+	        bottom: 0;
+	        left: -100%;
+	        z-index: 110;
+	        width:100%;
+	        height: 179px;
+	        overflow-x: hidden;
+	    }
+	    #banner-con-gloable .banner-btn-con{
+	        width: 100%;
+	        height:162px;
+	        background:rgba(30,15,8,0.95);
+	        position: absolute;
+	        bottom: 0;
+	    }
+	    #banner-con-gloable .banner-btn-con .close-btn{
+	        position: absolute;
+	        right: 35px;
+	        top:24px;
+	        z-index: 120;
+	        height: 24px;
+	        width: 24px;
+	        cursor:pointer;
+	    }
+	    #banner-con-gloable .banner-image-con{
+	        position: absolute;
+	        right: 50%;
+	        bottom: 0;
+	        width: 1000px;
+	        margin-right: -500px;
+	    }
+	    #float-pannel-gloable{
+	        padding-left: 28px;
+	        padding-bottom: 20px;
+	        display: block;
+	        position: fixed;
+	        bottom: 0;
+	        z-index: 110;
+	        left: -230px;
+	    }
+	    #float-pannel-gloable .float-btn{
+	        width: 24pxpx;
+	        height: 24px;
+	        position: absolute;
+	        right: 0;
+	        top: 0;
+	        z-index: 100;
+	    }
+	    #closed{
+	        height:24px;
+	        width:24px;
+	        vertical-algin:top;
+	        border:none;
+	        cursor:pointer;
+	    }
+	</style>
+
+</head>
+<body>
+	<div id="header" xmlns="http://www.w3.org/1999/html">
+	    <div class="mfw-header">
+	        <div class="header-wrap clearfix" id="_j_head_nav_warper">
+	            <div class="head-logo"><a class="mfw-logo" title="马蜂窝自由行" href="https://www.mafengwo.cn/"></a></div>
+	            <ul class="head-nav" data-cs-t="headnav" id="_j_head_nav">
+	                <li class="head-nav-index _j_head_nav_index" data-cs-p="index" data-tab-item="首页"><a href="https://www.mafengwo.cn/">首页</a></li>
+	                <li class="head-nav-place _j_head_nav_mdd" data-cs-p="mdd" data-tab-item="目的地"><a href="https://www.mafengwo.cn/mdd/" title="目的地">目的地</a></li>
+	                <li class="head-nav-gonglve _j_head_nav_gonglve" data-cs-p="gonglve" data-tab-item="旅游攻略"><a href="https://www.mafengwo.cn/gonglve/" title="旅游攻略">旅游攻略</a></li>
+	                <li class="head-nav-sales _j_head_nav_sales head-nav-dropdown _j_sales_nav_show" id="_j_nav_sales" data-cs-p="sales" data-tab-item="去旅行">
+	                    <a class="drop-toggle" href="https://www.mafengwo.cn/sales/" style="cursor: pointer;display: block;border-bottom:0 none;" data-sales-nav="去旅行">
+	                        <span>去旅行<i class="icon-caret-down"></i></span>
+	                    </a>
+	                    <div class="dropdown-menu dropdown-sales hide _j_sales_top" id="_j_sales_panel" data-cs-t="sales_nav">
+	                        <ul>
+	                            <li><a target="_blank" href="https://www.mafengwo.cn/sales/" data-sales-nav="自由行">自由行<i class="i-hot">hot</i></a></li>
+	                            <li><a target="_blank" href="https://www.mafengwo.cn/sales/0-0-0-0-0-0-0-0.html?group=4" data-sales-nav="跟团游">跟团游</a></li>
+	                            <li><a target="_blank" href="https://www.mafengwo.cn/localdeals/" data-sales-nav="当地游">当地游</a></li>
+	                            <li><a target="_blank" href="https://www.mafengwo.cn/sales/0-0-0-5-0-0-0-0.html" data-sales-nav="邮轮">邮轮</a></li>
+	                            <li><a target="_blank" href="https://www.mafengwo.cn/sales/visa/" data-sales-nav="签证">签证</a></li>
+	
+	                        </ul>
+	                    </div>
+	                </li>
+	                <li class="head-nav-flight _j_head_nav_flight" data-cs-p="flight" data-tab-item="机票"><a href="https://www.mafengwo.cn/flight/" title="国内机票">机票</a></li>
+	                <li class="head-nav-hotel _j_head_nav_hotel" data-cs-p="hotel" data-tab-item="酒店"><a href="https://www.mafengwo.cn/hotel/" title="酒店">订酒店</a></li>
+	                <li class="head-nav-community _j_head_nav_community head-nav-dropdown _j_shequ_nav_show" id="_j_nav_community" data-cs-p="community" data-tab-item="社区">
+	                    <div class="drop-toggle"><span>社区<i class="icon-caret-down"></i></span></div>
+	                    <!-- 社区下拉面板 begin -->
+	                    <div class="dropdown-panel dropdown-community hide _j_shequ_top no-image" id="_j_community_panel" data-cs-t="community_nav">
+	                        <div class="panel-wrapper">
+	                            <ul class="nav-list clearfix">
+	                                <li class="h"><a href="https://www.mafengwo.cn/wenda/" target="_blank" title="问答" data-cs-p="wenda">问答<i class="i-hot">hot</i></a></li>
+	                                <li><a href="https://www.mafengwo.cn/mall/things.php" target="_blank" title="马蜂窝周边" data-cs-p="things">马蜂窝周边<i class="i-new">new</i></a></li>
+	                                <li><a href="https://www.mafengwo.cn/club/" target="_blank" title="蜂首俱乐部" data-cs-p="club">蜂首俱乐部</a></li>
+	                                <li><a href="https://www.mafengwo.cn/together/" target="_blank" title="结伴" data-cs-p="together">结伴</a></li>
+	                            </ul>
+	                            <ul class="nav-list-sub clearfix">
+	                                <li><a href="https://www.mafengwo.cn/group/" target="_blank" title="马蜂窝旅行家" data-cs-p="group">小组论坛</a></li>
+	                                <li><a href="https://www.mafengwo.cn/rudder/" target="_blank" title="分舵同城" data-cs-p="rudder">分舵同城</a></li>
+	                                <li><a href="https://www.mafengwo.cn/auction/" target="_blank" title="马蜂窝拍卖行" data-cs-p="paimai">马蜂窝拍卖行</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <!-- 社区下拉面板 end -->
+	                </li>
+	                <li class="head-nav-choice _j_head_nav_choice" data-cs-p="choice" data-tab-item="马蜂窝旅行者之选"><a href="https://www.mafengwo.cn/poi/choice/group"><div class="mfwzx-logo"></div></a></li>
+	            </ul>
+	            <div class="head-search" data-online="1">
+	                <div class="head-search-wrapper">
+	                    <div class="head-searchform">
+	                        <input name="q" type="text" id="_j_head_search_input" autocomplete="off"/>
+	                        <a role="button" href="javascript:" class="icon-search" id="_j_head_search_link"></a>
+	                    </div>
+	                </div>
+	            </div>
+	            <div  id="pagelet-block-8d375868cb087ec4dd9c4eb1c62a7f18" class="" data-api="apps:user:pagelet:pageViewHeadInfo" data-params="{&quot;type&quot;:1}" data-async="1" data-controller="/js/pageletcommon/pageHeadUserInfoWWWNormal"></div>
+	        </div>
+	        <div class="shadow"></div>
+	    </div>
+	    
+	    <!-- 新自由行菜单 begin -->
+		<div class="dropdown-bar" style="display: none">
+		    <div class="content">
+		        <ul class="clearfix ul-dropdown-bar" id="Js_middleNav">
+		            <li data-type="sales"><a href="http://www.mafengwo.cn/sales/">自由行</a></li>
+		            <li data-type="freewalker"><a href="http://www.mafengwo.cn/sales/0-0-0-0-0-0-0-0.html?group=4">跟团游</a></li>
+		            <li data-type="localdeals"><a href="http://www.mafengwo.cn/localdeals/">当地游</a></li>
+		        </ul>
+		    </div>
+		
+		</div>
+		<!-- 新自由行菜单 end -->
+	</div>
+    <div class="wrapper clearfix">
+        <div class="aside">
+            <a href="myInfo_main.html"><i class="i1"></i>我的信息</a>
+            <a href="myInfo_photo.html"><i class="i2"></i>我的头像</a>
+            <a href="/setting/sns/" ><i class="i3"></i>绑定设置</a>
+            <a href="/setting/security/" ><i class="i4"></i>账号安全</a>
+            <a href="/setting/domain/" ><i class="i8"></i>我的窝设置</a>
+            <a href="/setting/blacklist/" ><i class="i9"></i>黑名单管理</a>
+            <a href="/setting/wallet/" ><i class="i10"></i>我的钱包</a>
+        </div>
+
+        <div class="content">
+            <div class="hd">
+                <strong>我的头像</strong>
+                <span>资料完善度
+                    <div class="progress">
+                        <div class="num">100%</div>
+                        <div class="on" style="width:100%"></div>
+                    </div>
+                </span>
+            </div>
+                                                
+		    <div class="userlogo">
+		        <div class="avatar" id="_j_avatar_box">
+		            <img src="https://n4-q.mafengwo.net/s10/M00/BB/6E/wKgBZ1zwl2uAIHzEAAHeKzyoT_U43.jpeg?imageView2%2F2%2Fw%2F120%2Fh%2F120%2Fq%2F90" width="120" height="120" border="0"/>
+		            <div class="progress" id="percentContent" style="display:none;">
+		                <div class="bar">
+		                    <div class="num" id="percentNum">0%</div>
+		                    <div class="on" style="width:0%" id="uploadPercent"></div>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="btn-sub">
+		            <div class="btn" id="_j_upload">选择图片</div>支持jpg、png、jpeg、bmp，图片大小5M以内
+		        </div>
+		        <div class="editor" id="_j_crop_box">
+		            <div class="clearfix">
+		                <div class="plan">
+		                    <img src="http://file.mafengwo.net/images/pp600.gif"/>
+		                </div>
+		                <div class="preview">
+		                    <p>预览</p>
+		                    <dl class="large">
+		                        <dt><img src="http://file.mafengwo.net/images/pp600.gif"/></dt>
+		                        <dd>120*120</dd>
+		                    </dl>
+		                    <dl class="normal">
+		                        <dt><img src="http://images.mafengwo.net/images/pp600.gif"/></dt>
+		                        <dd>48*48</dd>
+		                    </dl>
+		                    <dl class="small">
+		                        <dt><img src="http://images.mafengwo.net/images/pp600.gif"/></dt>
+		                        <dd>16*16</dd>
+		                    </dl>
+		                </div>
+		            </div>
+		            <div class="btns">
+		                <a href="#" class="btn1">保存</a>
+		                <a href="#" class="btn2">取消</a>
+		            </div>
+		        </div>
+		    </div>
+
+        </div>
+    </div>
+
+
+	<div id="footer">
+		<div class="ft-content" style="width: 1105px">
+			<div class="ft-info clearfix">
+			    <dl class="ft-info-col ft-info-intro">
+			        <dt>马蜂窝旅游网</dt>
+			        <dd>中国年轻一代用得更多的旅游网站</dd>
+			        <dd><strong>38,000</strong> 家旅游产品供应商</dd>
+			    </dl>
+			    <dl class="ft-info-col ft-info-about">
+			        <dt>关于我们</dt>
+			        <dd><a href="http://www.mafengwo.cn/s/about.html" rel="nofollow">关于马蜂窝</a><a href="http://www.mafengwo.cn/s/contact.html" class="m_l_10" rel="nofollow">联系我们</a></dd>
+			        <dd><a href="http://www.mafengwo.cn/s/private.html" rel="nofollow">隐私政策</a><a href="http://www.mafengwo.cn/s/logo.html" rel="nofollow" class="m_l_10">商标声明</a></dd>
+			    </dl>
+			    <dl class="ft-info-col ft-info-service">
+			        <dt>旅行服务</dt>
+			        <dd>
+			            <ul class="clearfix">
+			                <li><a target="_blank" href="http://www.mafengwo.cn/gonglve/">旅游攻略</a></li>
+			                <li><a target="_blank" href="http://www.mafengwo.cn/hotel/">酒店预订</a></li>
+			                <li><a target="_blank" href="http://www.mafengwo.cn/sales/">旅游特价</a></li>
+			                <li><a target="_blank" href="http://zuche.mafengwo.cn/">国际租车</a></li>
+			                <li><a target="_blank" href="http://www.mafengwo.cn/app/intro/gonglve.php">APP下载</a></li>
+			                <li style="width: 120px;"><a target="_blank" href="http://www.mafengwo.cn/sales/alliance.php" class="highlight">旅行商城全球商家入驻</a></li>
+			            </ul>
+			        </dd>
+			    </dl>
+			    <dl class="ft-info-col ft-info-qrcode">
+			        <dd>
+			            <span class="ft-qrcode-tejia"></span>
+			            <p>马蜂窝良品<br/>官方服务号</p>
+			        </dd>
+			        <dd>
+			            <span class="ft-qrcode-weixin"></span>
+			            <p>马蜂窝旅游<br/>订阅号</p>
+			        </dd>
+			    </dl>
+			    <dl class="ft-info-social">
+			        <dt>旅游之前，先上马蜂窝！</dt>
+			        <dd>
+			            <a class="ft-social-weibo" target="_blank" href="http://weibo.com/mafengwovip" rel="nofollow"><i class="ft-social-icon"></i></a>
+			            <a class="ft-social-qqt" target="_blank" href="http://t.qq.com/mafengwovip" rel="nofollow" ><i class="ft-social-icon"></i></a>
+			            <a class="ft-social-qzone" target="_blank" href="http://1213600479.qzone.qq.com/" rel="nofollow"><i class="ft-social-icon"></i></a>
+			        </dd>
+			    </dl>
+			</div>
+			<div class="ft-copyright">
+			    <a href="http://www.mafengwo.cn"><i class="ft-mfw-logo"></i></a>
+			    <p>© 2019 Mafengwo.cn <a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">京ICP备11015476号</a> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502013401" target="_blank">
+			    <img src="https://images.mafengwo.net/images/footer/police_record.png" width="12" style="margin:0 2px 4px 0;"/>京公网安备11010502013401号</a> <a href="https://images.mafengwo.net/images/about/icp2.jpg" target="_blank" rel="nofollow">京ICP证110318号</a><span class="m_l_10">违法和不良信息举报电话: 010-59222790 举报邮箱: mfwjubao@mafengwo.com</span></p>
+			    <p>网络出版服务许可证：(总)网出证(京)字第161号<span class="m_l_10">增值电信业务经营许可证：京B2-20180228</span> <a href="https://n1-q.mafengwo.net/s12/M00/A5/45/wKgED1xJi3uAA7KLAAf_CkKLHRQ87.jpeg" target="_blank" rel="nofollow" class="m_l_10">营业执照</a><a href="/sales/uhelp/doc" target="_blank" rel="nofollow" class="m_l_10">帮助中心</a><span class="m_l_10">马蜂窝客服：国内</span><span class="highlight">4006-345-678</span><span class="m_l_10">海外</span> <span class="highlight">+86-10-5922-2799</span></p>
+			</div>
+			<div class="ft-safety">
+			    <a class="s-a" target="_blank" href="#" id="___szfw_logo___"></a>
+			    <a class="s-b" href="#" target="_blank" rel="nofollow"></a>
+			    <a class="s-c" href="#" target="_blank" rel="nofollow"></a>
+			    <a class="s-d" href="#" target="_blank" rel="nofollow"></a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="float-pannel-gloable">
+	    <img class="float-image" src="" style="width:178px;height:200px;"/>
+	    <div class="float-btn">
+	    	<img id="closed" src=""/>
+	    </div>
+	</div>
+	
+</body>
+</html>

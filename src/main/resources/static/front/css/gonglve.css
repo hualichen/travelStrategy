@@ -23,8 +23,8 @@ img{border:0 none;}
 .focus .slide ul{width:9999px;position:absolute;left:0;top:0;}
 .focus .slide ul li{float:left;width:700px;height:340px;overflow:hidden;}
 .focus .slide ol{position:absolute;right:30px;bottom:24px;}
-.focus .slide ol li{float:left;width:20px;height:20px;margin-left:5px;background:url("../img/scroll_s.png")/*tpa=http://css.mafengwo.net/images/gonglve/scroll_s.png*/ center 5px no-repeat;text-indent:-10000px;overflow:hidden;cursor:pointer;}
-.focus .slide ol li.on{background:url("../img/scroll_b.png")/*tpa=http://css.mafengwo.net/images/gonglve/scroll_b.png*/ 0px 0px no-repeat;}
+.focus .slide ol li{float:left;width:20px;height:20px;margin-left:5px;background:url("../img/gonglve/scroll_s.png") center 5px no-repeat;text-indent:-10000px;overflow:hidden;cursor:pointer;}
+.focus .slide ol li.on{background:url("../img/gonglve/scroll_b.png") 0px 0px no-repeat;}
 
 .da980{position:relative;}
 .da980 .da-flip{ width:980px; height:365px; position:absolute; top:-365px; left:0; z-index:99; display:none;}
@@ -35,16 +35,16 @@ img{border:0 none;}
 .mdd_nav .inner{position:relative;zoom:1;z-index:10;border-top:1px #ddd solid;}
 .mdd_nav dl{height:40px;border:1px solid #ddd;border-top:0 none;font-size:14px;}
 .mdd_nav dl.hover{border-top:1px solid #ffc74f;margin-top:-1px;border-color:#ffc74f;}
-.mdd_nav dl.hover dt{background:#fff url(../img/dt_bg.gif)/*tpa=http://css.mafengwo.net/images/gonglve/dt_bg.gif*/ no-repeat 0 -41px;width:239px;z-index:100;width:249px;margin-right:-1px;color:#FFA801;}
+.mdd_nav dl.hover dt{background:#fff url(../img/gonglve/dt_bg.gif) no-repeat 0 -41px;width:239px;z-index:100;width:249px;margin-right:-1px;color:#FFA801;}
 .mdd_nav dl.hover dd{display:block;}
-.mdd_nav dt{position:relative;width:248px;height:40px;background:url(../img/dt_bg.gif)/*tpa=http://css.mafengwo.net/images/gonglve/dt_bg.gif*/ no-repeat 0 0px;color:#666;line-height:39px;cursor:pointer;font-size:14px;color:#414141;overflow:hidden;}
+.mdd_nav dt{position:relative;width:248px;height:40px;background:url(../img/gonglve/dt_bg.gif) no-repeat 0 0px;color:#666;line-height:39px;cursor:pointer;font-size:14px;color:#414141;overflow:hidden;}
 .mdd_nav dt strong{float:left;padding-left:15px;font-weight:normal;}
-.mdd_nav dt .new{float:left;margin:7px 0 0 5px;width:22px;height:12px;background:url(../img/bn_new.gif)/*tpa=http://css.mafengwo.net/images/gonglve/bn_new.gif*/ no-repeat;line-height:0;overflow:hidden;}
+.mdd_nav dt .new{float:left;margin:7px 0 0 5px;width:22px;height:12px;background:url(../img/gonglve/bn_new.gif) no-repeat;line-height:0;overflow:hidden;}
 
 .mdd_nav dd li{height:25px;margin-right:7px;overflow:hidden;}
 .mdd_nav dd.list2{width:450px;}
 .mdd_nav dd a{color:#666;}
-.mdd_nav dd .bk_down{display:inline-block;width:16px;height:16px;margin-right:3px;background:url(../img/book_sprites.gif)/*tpa=http://css.mafengwo.net/images/gonglve/book_sprites.gif*/ no-repeat -34px 0;vertical-align:middle;line-height:200px;overflow:hidden;}
+.mdd_nav dd .bk_down{display:inline-block;width:16px;height:16px;margin-right:3px;background:url(../img/gonglve/book_sprites.gif) no-repeat -34px 0;vertical-align:middle;line-height:200px;overflow:hidden;}
 .mdd_nav dd p a{display:inline-block;width:195px;color:#666;font-size:14px;}
 .mdd_nav dd p a:hover{color:#9B5128;}
 .mdd_nav dd.short p a{width:95px;}
@@ -60,10 +60,10 @@ img{border:0 none;}
 .zhuti_title{margin:10px 0px;}
 .zhuti_title h3{float:left;font-size:16px;color:#666;line-height:16px;margin-left:30px;margin-top:2px;display:inline;_line-height:18px;}
 
-/* 攻略专题 zhoushengxue 3013-04-09-8 */
+/* 鏀荤暐涓撻 zhoushengxue 3013-04-09-8 */
 .gonglve-nav{border:1px solid #ddd;border-bottom:0;box-shadow:0 0.5px 2px rgba(0,0,0,0.1);position:relative;z-index:10;}
 .gonglve-nav .nav-title{height:40px;padding:0 15px;border-bottom:1px solid #ddd;background-color:#fff;line-height:40px;font-size:14px;color:#666;cursor:default;position:relative;z-index:2;}
-.gonglve-nav .nav-title .gn-arrow{position:absolute;right:15px;top:15px;width:6px;height:10px;background:url(../img/new-gl-icon6.png)/*tpa=http://css.mafengwo.net/images/gonglve/new-gl-icon6.png*/ no-repeat -20px -40px;overflow:hidden;}
+.gonglve-nav .nav-title .gn-arrow{position:absolute;right:15px;top:15px;width:6px;height:10px;background:url(../img/gonglve/new-gl-icon6.png) no-repeat -20px -40px;overflow:hidden;}
 .gonglve-nav .hover .nav-title{margin-right:-1px;color:#ff8a00;}
 .gonglve-nav .hover .nav-title .gn-arrow{background-position:-30px -40px;}
 
@@ -87,7 +87,7 @@ img{border:0 none;}
 .category-panel dd{display:inline;position:static;border:0;width:auto;padding:0;float:left;margin:5px 15px 5px 0;height:20px;overflow:hidden;white-space:nowrap;line-height:20px;}
 
 .input_like{border:2px #FFA800 solid;height:40px;margin-top:10px;position:relative;z-index:10;}
-.input_like span{float:left;height:27px;width:29px;background:url(../img/new-gl-icon6.png)/*tpa=http://css.mafengwo.net/images/gonglve/new-gl-icon6.png*/ -20px -60px no-repeat;margin-top:7px;margin-left:8px;}
+.input_like span{float:left;height:27px;width:29px;background:url(../img/gonglve/new-gl-icon6.png) -20px -60px no-repeat;margin-top:7px;margin-left:8px;}
 .input_like input{height:30px;line-height:30px;float:left;width:206px;padding:3px 0px;border:0px;font-size:12px;color:#888888;margin-left:8px;margin-top:2px;outline:none;font-family:"Microsoft Yahei",Tahoma,Arial,Helvetica,STHeiti;_font-family:Tahoma,Arial,Helvetica,STHeiti;}
 .search_resu{border:1px #FFA800 solid;width:518px;position:absolute;z-index:50;top:41px;left:-2px;background:#fff;padding-bottom:30px;display:none;}
 .search_resu ul{padding-top:10px;}
@@ -124,10 +124,10 @@ img{border:0 none;}
 
 
 .gl_wrap span{float:left;width:42px;height:16px;margin-left:10px;margin-top:7px;}
-.gl_wrap span a{display:block;width:42px;height:16px;background:url("../img/ms.png")/*tpa=http://css.mafengwo.net/images/gonglve/ms.png*/ 0px 0px no-repeat;text-indent:-10000px;overflow:hidden;}
-.gl_wrap span a:hover{background:url("../img/ms.png")/*tpa=http://css.mafengwo.net/images/gonglve/ms.png*/ -43px 0px no-repeat;}
-.gl_wrap span a.sp_toggle{background:url("../img/ms.png")/*tpa=http://css.mafengwo.net/images/gonglve/ms.png*/ 0px -17px no-repeat;}
-.gl_wrap span a.sp_toggle:hover{background:url("../img/ms.png")/*tpa=http://css.mafengwo.net/images/gonglve/ms.png*/ -43px -17px no-repeat;}
+.gl_wrap span a{display:block;width:42px;height:16px;background:url("../img/gonglve/ms.png") 0px 0px no-repeat;text-indent:-10000px;overflow:hidden;}
+.gl_wrap span a:hover{background:url("../img/gonglve/ms.png") -43px 0px no-repeat;}
+.gl_wrap span a.sp_toggle{background:url("../img/gonglve/ms.png") 0px -17px no-repeat;}
+.gl_wrap span a.sp_toggle:hover{background:url("../img/gonglve/ms.png") -43px -17px no-repeat;}
 
 .gl_wrap1 ol{height:auto;overflow:visible;}
 .gl_wrap.sub{width:auto;padding:5px 0 8px 58px;margin-top:0;background-color:#f3f3f3;}
@@ -147,10 +147,10 @@ img{border:0 none;}
 .gl_list{width:130px;float:left;margin-right:40px;}
 .gl_list a{display:block;height:184px;width:130px;overflow:hidden;}
 .gl_list a img{width:100%;height:100%;}
-.gl_list .icon-new{position:absolute;margin:-4px 0 0 82px;width:53px;height:53px;background:url(../img/icon-new.png)/*tpa=http://css.mafengwo.net/images/gonglve/icon-new.png*/ no-repeat;overflow:hidden;}
+.gl_list .icon-new{position:absolute;margin:-4px 0 0 82px;width:53px;height:53px;background:url(../img/gonglve/icon-new.png) no-repeat;overflow:hidden;}
 
 .down_cout{height:24px;width:130px;background:#EBEBEB;border-radius:30px;margin-top:5px;position:relative;}
-.down_cout span{display:block;position:absolute;top:0px;left:0px;height:24px;width:24px;background:url(../img/new-gl-icon6.png)/*tpa=http://css.mafengwo.net/images/gonglve/new-gl-icon6.png*/ -20px -90px no-repeat;}
+.down_cout span{display:block;position:absolute;top:0px;left:0px;height:24px;width:24px;background:url(../img/gonglve/new-gl-icon6.png) -20px -90px no-repeat;}
 .down_cout p{line-height:24px;color:#666;padding-left:30px;}
 .paginator_video{margin-top:20px;}
 .site_nav{height:30px;clear:both;overflow:hidden;margin-top: 10px;}
@@ -198,7 +198,7 @@ img{border:0 none;}
 .scroll_wrap ul li a:hover span{display:block;}
 .scroll_f{width:100%;height:8px;background:#E4E4E4;border-radius:10px;margin-top:0px!important;position:relative;}
 .scroll_bar{height:8px;width:70px;position:absolute;z-index:40;top:0px;left:20px;}
-.scroll_bar a{display:block;height:8px;width:70px;background:url("../img/scroll_bar_o.png")/*tpa=http://css.mafengwo.net/images/gonglve/scroll_bar_o.png*/ 0px 0px no-repeat;text-indent:-10000px;overflow:hidden;}
+.scroll_bar a{display:block;height:8px;width:70px;background:url("../img/gonglve/scroll_bar_o.png") 0px 0px no-repeat;text-indent:-10000px;overflow:hidden;}
 .gl_l{width:302px;float:left;margin-top:30px;padding-bottom:20px;}
 .gl_l img{vertical-align:inherit;}
 .gl_r{width:640px;float:right;margin-top:30px;}
@@ -259,9 +259,9 @@ img{border:0 none;}
 .popdiv{width:609px;position:relative;left:50%;margin-left:-280px;}
 .popdiv img{vertical-align:top;margin-top:20px;}
 a.fangda,a.suoxiao{position:absolute;z-index:100;top:20px;left:0px;display:block;height:58px;width:58px;text-indent:-10000px;overflow:hidden;}
-a.fangda{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.net/images/gonglve/pview-ctrl-btn.png*/ 0px -120px no-repeat;_background-position:-60px -120px;}
-a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.net/images/gonglve/pview-ctrl-btn.png*/ 0px -60px no-repeat;_background-position:-60px -60px;}
-.popdiv span,#mfw_op_close_btn{display:block;height:58px;width:58px;position:absolute;z-index:200;top:20px;right:0;background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.net/images/gonglve/pview-ctrl-btn.png*/ 0px 0px no-repeat;_background-position:0 0;cursor:pointer;text-indent:-10000px;overflow:hidden;}
+a.fangda{background:url("../img/gonglve/pview-ctrl-btn.png") 0px -120px no-repeat;_background-position:-60px -120px;}
+a.suoxiao{background:url("../img/gonglve/pview-ctrl-btn.png") 0px -60px no-repeat;_background-position:-60px -60px;}
+.popdiv span,#mfw_op_close_btn{display:block;height:58px;width:58px;position:absolute;z-index:200;top:20px;right:0;background:url("../img/gonglve/pview-ctrl-btn.png") 0px 0px no-repeat;_background-position:0 0;cursor:pointer;text-indent:-10000px;overflow:hidden;}
 .popdiv a.fangda,.popdiv a.suoxiao,.popdiv span,#mfw_op_close_btn{_filter:alpha(opacity=90);}
 
 .show_more{border-bottom:1px #E4E4E4 dotted;height:35px;text-align:center;line-height:35px;}
@@ -278,10 +278,10 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
 .question .question_link{width:520px;}
 .question .more_toggle{display:none;}
 .more_toggle{float:right;width:42px;height:16px;margin-right:15px;margin-top:12px;display:inline;}
-.more_toggle a{display:block;width:42px;height:16px;background:url("../img/ms.png")/*tpa=http://css.mafengwo.net/images/gonglve/ms.png*/ 0px 0px no-repeat;text-indent:-10000px;overflow:hidden;}
-.more_toggle a:hover{background:url("../img/ms.png")/*tpa=http://css.mafengwo.net/images/gonglve/ms.png*/ -43px 0px no-repeat;}
-.more_toggle a.sp_toggle{background:url("../img/ms.png")/*tpa=http://css.mafengwo.net/images/gonglve/ms.png*/ 0px -17px no-repeat;}
-.more_toggle a.sp_toggle:hover{background:url("../img/ms.png")/*tpa=http://css.mafengwo.net/images/gonglve/ms.png*/ -43px -17px no-repeat;}
+.more_toggle a{display:block;width:42px;height:16px;background:url("../img/gonglve/ms.png") 0px 0px no-repeat;text-indent:-10000px;overflow:hidden;}
+.more_toggle a:hover{background:url("../img/gonglve/ms.png") -43px 0px no-repeat;}
+.more_toggle a.sp_toggle{background:url("../img/gonglve/ms.png") 0px -17px no-repeat;}
+.more_toggle a.sp_toggle:hover{background:url("../img/gonglve/ms.png") -43px -17px no-repeat;}
 
 /* FloatBar */
 .float-bar{ width:100%;background:#fff;background:rgba(255,255,255,0.95);  box-shadow:0 0 3px rgba(0, 0, 0, 0.3); *border-bottom:1px solid #f5f5f5; border-bottom:1px solid #f5f5f5\0; *zoom:1; position:fixed; top:0;left:0; z-index:99;}
@@ -292,20 +292,20 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
 .float-bar .content a.btn:hover{background-color:#FF8A00; text-decoration:none;}
 .float-bar .content a.btn2{ background-color:#FFF4DF; font-size:14px; color:#FF8A00; line-height:28px; display:inline-block; padding:0 10px; margin:0 10px; border-radius:5px;}
 .float-bar .content a.btn2:hover{background-color:#FFF4DF; text-decoration:none;}
-.float-bar .content i{ width:16px; height:16px; background:url(../img/connect_ico2.gif)/*tpa=http://css.mafengwo.net/images/login/connect_ico2.gif*/ no-repeat; display:inline-block; vertical-align:middle; margin-right:5px;}
+.float-bar .content i{ width:16px; height:16px; background:url(../img/login/connect_ico2.gif) no-repeat; display:inline-block; vertical-align:middle; margin-right:5px;}
 .float-bar .content i.qq{ background-position:0 -416px;}
 .float-bar .content i.weibo{ background-position:0 0px;}
 
-.qr-code{position:fixed;_position:absolute;left:50%;top:50%;z-index:51;margin:0 0 0 498px;width:120px;height:239px;background:url(../img/qr_code3.gif)/*tpa=http://css.mafengwo.net/images/gonglve/qr_code3.gif*/ no-repeat;overflow:hidden;}
+.qr-code{position:fixed;_position:absolute;left:50%;top:50%;z-index:51;margin:0 0 0 498px;width:120px;height:239px;background:url(../img/gonglve/qr_code3.gif) no-repeat;overflow:hidden;}
 @media (max-width:1240px){
 	.qr-code{display:none;}
 }
 
-/* 攻略下载 */
+/* 鏀荤暐涓嬭浇 */
 .popup_ask {width: 686px;margin: -200px 0 0 -343px;}
 .popup_ask dt {width: 646px;padding: 30px 0;margin: 0 auto;text-align: center;font-size: 16px;color: #3f200f;border-bottom: 1px solid #ddd;}
 .popup_ask dd {text-align: left;color: #666;}
-.popup_ask .pa_earth {height: 60px;padding: 30px;background: url(../img/a_earth.gif)/*tpa=http://css.mafengwo.net/images/gonglve/a_earth.gif*/ no-repeat 500px bottom;}
+.popup_ask .pa_earth {height: 60px;padding: 30px;background: url(../img/gonglve/a_earth.gif) no-repeat 500px bottom;}
 .pa_try {font-size: 20px;margin-bottom: 6px;}
 
 .popup_ask dd a{ color:#666; }
@@ -327,12 +327,12 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
 .popup-box .pop-btn {padding: 30px 0;}
 .popup_ask .pop-btn .btn-sub {height: 35px;line-height: 35px;font-size: 18px;}
 
-/* 更新时间 2014-3-19 by old bin */
+/* 鏇存柊鏃堕棿 2014-3-19 by old bin */
 .update_time {margin-top: 5px;text-align: center;font-size: 10px;}
 
-/* 将原页面模板上的css迁移只css文件中 2014-10-30*/
+/* 灏嗗師椤甸潰妯℃澘涓婄殑css杩佺Щ鍙猚ss鏂囦欢涓� 2014-10-30*/
 
-/* 攻略预览CSS */
+/* 鏀荤暐棰勮CSS */
 #mfw_op_box {
     position: absolute;
     width: 100%;
@@ -365,7 +365,7 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
 }
 
 .suoxiao {
-    background: url("../img/smaller.png")/*tpa=http://images.mafengwo.net/images/gonglve/smaller.png*/ no-repeat scroll 0 0;
+    background: url("http:/../img.mafengwo.net../img/gonglve/smaller.png") no-repeat scroll 0 0;
     width: 40px;
     height: 40px;
     text-indent: -10000px;
@@ -385,7 +385,7 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
     padding: 6px 21px;
 }
 
-/* 纠错CSS -start */
+/* 绾犻敊CSS -start */
 
 .slideLayer .toolBar {
     background: none repeat scroll 0 0 transparent;
@@ -429,7 +429,7 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
 }
 
 .slideLayer .comment_btn, .slideLayer .share_btn, .slideLayer .corr_btn {
-    background: url("../img/book_sprites3.gif")/*tpa=http://images.mafengwo.net/images/mdd/book/book_sprites3.gif*/ no-repeat scroll 0 0 transparent;
+    background: url("http:/../img.mafengwo.net../img/mdd/book/book_sprites3.gif") no-repeat scroll 0 0 transparent;
     display: block;
     height: 23px;
     line-height: 200px;
@@ -477,7 +477,7 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
 }
 
 .pop_bug .Bbtn input {
-    background: url("../img/btn_bg.jpg")/*tpa=http://images.mafengwo.net/images/mdd/btn_bg.jpg*/ repeat-x scroll 0 0 transparent;
+    background: url("http:/../img.mafengwo.net../img/mdd/btn_bg.jpg") repeat-x scroll 0 0 transparent;
     border: 0 none;
     color: #FFFFFF;
     font-size: 12px;
@@ -492,9 +492,9 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
     background-color: #FFF8DC;
     color: #FF4500;
 }
-/* 纠错CSS -end */
+/* 绾犻敊CSS -end */
 
-/* 攻略改版 zhou 2016.5.25 */
+/* 鏀荤暐鏀圭増 zhou 2016.5.25 */
 .gonglve_wrap{margin-top:15px;padding-bottom:20px;}
 .sidebar{float:left;width:160px;}
 .cont-main{float:right;width:790px;margin-bottom:20px;}
@@ -526,7 +526,7 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
 .cont-main .hd h3{float:left;font-weight:normal;font-size:20px;color:#333;}
 .mui-search{float:right;position:relative;}
 .mui-search-inp{width:150px;padding:0 35px 0 15px;border:1px solid #ddd;height:34px;border-radius:4px;line-height:34px;font-size:14px;vertical-align:top;}
-.mui-search-icon{position:absolute;right:11px;top:10px;width:16px;height:16px;background:url(../img/new-gl-icon6.png)/*tpa=http://css.mafengwo.net/images/gonglve/new-gl-icon6.png*/ no-repeat -20px 0;overflow:hidden;}
+.mui-search-icon{position:absolute;right:11px;top:10px;width:16px;height:16px;background:url(../img/gonglve/new-gl-icon6.png) no-repeat -20px 0;overflow:hidden;}
 .mui-search-inp:focus{border-color:#ff9d00;box-shadow:0 0 3px rgba(255,157,0,.6);}
 .mui-search-inp:focus+.mui-search-icon{background-position:-40px 0;}
 
@@ -537,7 +537,7 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
 .feed-item:hover .title{color:#ff9d00;}
 .cont-main .type{float:left;display:inline-block;line-height:20px;font-size:12px;color:#666;}
 .cont-main .type strong{font-weight:normal;color:#ff9d00;}
-.cont-main .type i{float:left;margin-right:10px;width:20px;height:20px;background:url(../img/new-gl-icon6.png)/*tpa=http://css.mafengwo.net/images/gonglve/new-gl-icon6.png*/ no-repeat 0 0;overflow:hidden;}
+.cont-main .type i{float:left;margin-right:10px;width:20px;height:20px;background:url(../img/gonglve/new-gl-icon6.png) no-repeat 0 0;overflow:hidden;}
 .cont-main .type .icon-sales{background-position:0 -20px;}
 .cont-main .type .icon-line{background-position:0 -40px;}
 .cont-main .type .icon-weixin{background-position:0 -60px;}
@@ -549,7 +549,7 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
 .feed-item a:hover{text-decoration:none;}
 .feed-item .stat .num{color:#ff9d00;}
 .feed-item .stat em{display:inline-block;margin-right:5px;line-height:20px;background-color:#ff9d00;color:#fff;padding:0 6px;border-radius:2px;font-style:normal;}
-.feed-item .icon-hand,.feed-item .icon-cart{display:inline-block;margin-left:10px;width:15px;height:15px;background:url(../img/new-gl-icon6.png)/*tpa=http://css.mafengwo.net/images/gonglve/new-gl-icon6.png*/ no-repeat -40px -40px;overflow:hidden;vertical-align:-2px;*vertical-align:middle;}
+.feed-item .icon-hand,.feed-item .icon-cart{display:inline-block;margin-left:10px;width:15px;height:15px;background:url(../img/gonglve/new-gl-icon6.png) no-repeat -40px -40px;overflow:hidden;vertical-align:-2px;*vertical-align:middle;}
 .feed-item .icon-cart{width:16px;background-position:-20px -116px;}
 .feed-item .title{margin-bottom:15px;font-size:20px;color:#333;}
 .feed-item .tag-rec{display:inline-block;margin-left:5px;padding:0 10px;line-height:20px;background-color:#ff9d00;color:#fff;border-radius:2px 2px 2px 0;font-size:12px;position:relative;vertical-align:2px;*vertical-align:middle;}
@@ -568,9 +568,9 @@ a.suoxiao{background:url("../img/pview-ctrl-btn.png")/*tpa=http://css.mafengwo.n
 .feed-item .author{display:inline-block;margin-right:10px;font-size:12px;color:#ff9d00;}
 .feed-item .author img{margin-right:5px;width:16px;height:16px;border-radius:50%;overflow:hidden;vertical-align:middle;}
 .feed-item .txt-line a{display:inline;color:#333;}
-.feed-item .txt-line .arrow{margin:0 10px;display:inline-block;width:14px;height:10px;background: url(../img/new-gl-icon6.png)/*tpa=http://css.mafengwo.net/images/gonglve/new-gl-icon6.png*/ no-repeat -40px -20px;overflow: hidden;line-height: 100px;*vertical-align: middle;}
+.feed-item .txt-line .arrow{margin:0 10px;display:inline-block;width:14px;height:10px;background: url(../img/gonglve/new-gl-icon6.png) no-repeat -40px -20px;overflow: hidden;line-height: 100px;*vertical-align: middle;}
 
 .hr + a,._j_page_loader{margin-top:10px;}
 @media (min-resolution:1.25dppx),(-webkit-min-device-pixel-ratio:1.25),(min-device-pixel-ratio:1.25){
-	.cont-main .type i,.feed-item .icon-hand,.gonglve-nav .nav-title .gn-arrow,.input_like span,.down_cout span,.feed-item .icon-cart{background-image:url(../img/new-gl-icon6@2x.png)/*tpa=http://css.mafengwo.net/images/gonglve/new-gl-icon6@2x.png*/;background-size:60px auto;}
+	.cont-main .type i,.feed-item .icon-hand,.gonglve-nav .nav-title .gn-arrow,.input_like span,.down_cout span,.feed-item .icon-cart{background-image:url(../img/gonglve/new-gl-icon6@2x.png);background-size:60px auto;}
 }
