@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.UsersDao">
+	<!-- 通用代码块 -->
+	<sql id="users_sql">select * from users</sql>
+	<!-- 前台登录 -->
+	<select id="userLogin" resultType="Users">
+		select * from users where usName=#{param1} and usPwd=#{param2}
+	</select>
+</mapper>

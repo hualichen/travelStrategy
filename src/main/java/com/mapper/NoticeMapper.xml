@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.UsersDao">
+	<!-- 通用代码块 -->
+	<sql id="notice_sql">select * from notice</sql>
+	<!-- 查询所有公告 -->
+	<select id="findNotice" resultType="Notice">
+		<include refid="notice_sql"></include>
+	</select>
+	<!-- 按照id查询公告 -->
+	<select id="findByNoid">
+		<include refid="notice_sql"></include>
+		where noid=#{param1}
+	</select>
+	<!-- 新增公告 -->
+	<insert id="addNotice">
+		INSERT INTO `sn`.`notice` (`noid`, `noTitle`, `admid`, `noTime`, `noState`) 
+		VALUES (NULL, #{noTitle}, #{admid}, now(), #{noState});
+	</insert>
+	<!-- 修改公告 -->
+	<update id="updNotice">
+		UPDATE `sn`.`notice` SET `noTitle`=#{noTitle}, `admid`=#{admid}, 
+		`noTime`=now(), `noState`=#{noState} WHERE noid=#{noid};
+	</update>
+	<!-- 修改公告状态 -->
+	<update id="updNoticeState">
+		update notice set noState=#{param2} where noid=#{param1}
+	</update>
+</mapper>

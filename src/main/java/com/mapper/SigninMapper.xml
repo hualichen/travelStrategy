@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.SigninDao">
+	<select id="findById" resultType="Signin" parameterType="java.lang.Integer">
+		select * from signin where usid=#{param1}
+	</select>
+	<insert id="addSignin">
+		INSERT INTO `sn`.`signin` (`siid`, `usid`, `siState`, `siTime`, `siNum`) 
+		VALUES (#{siid}, #{usid}, #{siState},now(), #{siNum});
+	</insert>
+	<update id="updSignin">
+		UPDATE `sn`.`signin`
+		SET `siid`=#{siid}, `usid`=#{usid}, `siState`=#{siState}, 
+		`siTime`=now(), `siNum`=#{siNum}
+		WHERE siid=#{siid};
+	</update>
+	
+</mapper>
