@@ -13,7 +13,6 @@
 		<if test="param2!=null">
 			limit #{param2},9
 		</if>
-		
 	</select>
 	<!-- 按照id查询公告 -->
 	<select id="findByNoid">
