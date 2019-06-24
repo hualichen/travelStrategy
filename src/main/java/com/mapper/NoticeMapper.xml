@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
-<mapper namespace="com.dao.UsersDao">
+<mapper namespace="com.dao.NoticeDao">
 	<!-- 通用代码块 -->
 	<sql id="notice_sql">select * from notice</sql>
 	<!-- 查询所有公告 -->
-	<select id="findNotice" resultType="Notice">
-		<include refid="notice_sql"></include>
+	<select id="findNotice" resultType="java.util.Map">
+		select  n.*,a.admName from notice n LEFT JOIN admins a
+		on n.admid=a.admid
+		<if test="param1!=null and param1!=''">
+			where n.noTitle like concat('%',#{param1},'%')
+		</if>
+		<if test="param2!=null">
+			limit #{param2},9
+		</if>
+		
 	</select>
 	<!-- 按照id查询公告 -->
 	<select id="findByNoid">
 		<include refid="notice_sql"></include>
 		where noid=#{param1}
 	</select>
+	<select id="countNotice" resultType="java.lang.Integer">
+		select count(noid) from notice
+	</select>
 	<!-- 新增公告 -->
 	<insert id="addNotice">
-		INSERT INTO `sn`.`notice` (`noid`, `noTitle`, `admid`, `noTime`, `noState`) 
-		VALUES (NULL, #{noTitle}, #{admid}, now(), #{noState});
+		INSERT INTO `sn`.`notice` (`noid`, `noTitle`,`noContent`, `admid`, `noTime`, `noState`) 
+		VALUES (NULL, #{noTitle},#{noContent}, #{admid}, now(), 0);
 	</insert>
 	<!-- 修改公告 -->
 	<update id="updNotice">
-		UPDATE `sn`.`notice` SET `noTitle`=#{noTitle}, `admid`=#{admid}, 
+		UPDATE `sn`.`notice` SET `noTitle`=#{noTitle}, `admid`=#{admid}, `noContent`=#{noContent},
 		`noTime`=now(), `noState`=#{noState} WHERE noid=#{noid};
 	</update>
 	<!-- 修改公告状态 -->

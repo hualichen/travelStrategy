@@ -18,6 +18,7 @@ window.Env = {"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengwo.net","W_H
 <script language="javascript" src="front/js/inspector^alw^1556174996.js" type="text/javascript" crossorigin="anonymous"></script>
 <script language="javascript" src="front/js/m.sns.share.js" type="text/javascript" crossorigin="anonymous"></script>
 <script language="javascript" src="front/js/mfw.delegation.js?1537192880" type="text/javascript" crossorigin="anonymous"></script>
+<script type="text/javascript" src="front/js/chenlihua.js"></script>
 <style>
     #banner-con-gloable{
         display: block;
@@ -93,40 +94,12 @@ window.Env = {"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengwo.net","W_H
                     <a class="drop-toggle" href="http://www.mafengwo.cn/sales/" style="cursor: pointer;display: block;border-bottom:0 none;" data-sales-nav="去旅行">
                         <span>去旅行<i class="icon-caret-down"></i></span>
                     </a>
-                    <div class="dropdown-menu dropdown-sales hide _j_sales_top" id="_j_sales_panel" data-cs-t="sales_nav">
-                        <ul>
-                            <li><a target="_blank" href="http://www.mafengwo.cn/sales/" data-sales-nav="自由行">自由行<i class="i-hot">hot</i></a></li>
-                            <li><a target="_blank" href="http://www.mafengwo.cn/sales/0-0-0-0-0-0-0-0.html?group=4" data-sales-nav="跟团游">跟团游</a></li>
-                            <li><a target="_blank" href="http://www.mafengwo.cn/localdeals/" data-sales-nav="当地游">当地游</a></li>
-                            <li><a target="_blank" href="http://www.mafengwo.cn/sales/0-0-0-5-0-0-0-0.html" data-sales-nav="邮轮">邮轮</a></li>
-                            <li><a target="_blank" href="http://www.mafengwo.cn/sales/visa/" data-sales-nav="签证">签证</a></li>
-                        </ul>
-                    </div>
                 </li>
                 <li class="head-nav-flight _j_head_nav_flight" data-cs-p="flight" data-tab-item="机票"><a href="http://www.mafengwo.cn/flight/" title="国内机票">机票</a></li>
                 <li class="head-nav-hotel _j_head_nav_hotel" data-cs-p="hotel" data-tab-item="酒店"><a href="http://www.mafengwo.cn/hotel/" title="酒店">订酒店</a></li>
-                <li class="head-nav-community _j_head_nav_community head-nav-dropdown _j_shequ_nav_show" id="_j_nav_community" data-cs-p="community" data-tab-item="社区">
-                    <div class="drop-toggle"><span>社区<i class="icon-caret-down"></i></span></div>
-                    <!-- 社区下拉面板 begin -->
-                    <div class="dropdown-panel dropdown-community hide _j_shequ_top no-image" id="_j_community_panel" data-cs-t="community_nav">
-                        <div class="panel-wrapper">
-                            <ul class="nav-list clearfix">
-                                <li class="h"><a href="http://www.mafengwo.cn/wenda/" target="_blank" title="问答" data-cs-p="wenda">问答<i class="i-hot">hot</i></a></li>
-                                <li><a href=" " target="_blank" title="马蜂窝周边" data-cs-p="things">马蜂窝周边<i class="i-new">new</i></a></li>
-                                <li><a href=" " target="_blank" title="蜂首俱乐部" data-cs-p="club">蜂首俱乐部</a></li>
-                                <li><a href=" " target="_blank" title="结伴" data-cs-p="together">结伴</a></li>
-                            </ul>
-                            <ul class="nav-list-sub clearfix">
-                                
-                                <li><a href="http://www.mafengwo.cn/group/" target="_blank" title="马蜂窝旅行家" data-cs-p="group">小组论坛</a></li>
-                                <li><a href="http://www.mafengwo.cn/rudder/" target="_blank" title="分舵同城" data-cs-p="rudder">分舵同城</a></li>
-                                <li><a href="http://www.mafengwo.cn/auction/" target="_blank" title="马蜂窝拍卖行" data-cs-p="paimai">马蜂窝拍卖行</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 社区下拉面板 end -->
-                </li>
+                <li class="head-nav-hotel _j_head_nav_hotel" data-cs-p="hotel" data-tab-item="酒店"><a href="http://www.mafengwo.cn/hotel/" title="问答">问答</a></li>
+                
+               
                 <li class="head-nav-app _j_head_nav_app" data-cs-p="app" data-tab-item="APP"><a href="http://www.mafengwo.cn/app/intro/gonglve.php" title="APP">APP</a></li>
                 <li class="head-nav-choice _j_head_nav_choice" data-cs-p="choice" data-tab-item="马蜂窝旅行者之选"><a href="http://www.mafengwo.cn/poi/choice/group"><div class="mfwzx-logo"></div></a></li>
             </ul>
@@ -138,12 +111,17 @@ window.Env = {"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengwo.net","W_H
                     </div>
                 </div>
             </div>
-            <div  id="pagelet-block-c55dfe06f06ce7d7a49a513668ea5750" class="" data-api="apps:user:pagelet:pageViewHeadInfo" data-params="{&quot;type&quot;:1}" data-async="1" data-controller="/js/pageletcommon/pageHeadUserInfoWWWNormal"></div>
+             <ul class="head-nav">
+             	<!--  -->
+        		<li class="title" data-type="0"><input th:type="button" value="签到" th:onclick="|javascript:Signin()|"/> </li>
+        	</ul>
+            <div  id="pagelet-block-df43168aad64f48f31b76611d1206d77" class="" data-api="apps:user:pagelet:pageViewHeadInfo" data-params="{&quot;type&quot;:1}" data-async="1" data-controller="front/js/pageletcommon/pageHeadUserInfoWWWNormal"></div>
         </div>
         <div class="shadow"></div>
+       
     </div>
-  
-	<!-- 新自由行菜单 begin -->
+   
+    <!-- 新自由行菜单 begin -->
 	<div class="dropdown-bar" style="display: none">
 	    <div class="content">
 	        <ul class="clearfix ul-dropdown-bar" id="Js_middleNav">
@@ -152,11 +130,11 @@ window.Env = {"WWW_HOST":"www.mafengwo.cn","IMG_HOST":"images.mafengwo.net","W_H
 	            <li data-type="localdeals"><a href="http://www.mafengwo.cn/localdeals/">当地游</a></li>
 	            <li data-type="visa"><a href="http://www.mafengwo.cn/sales/visa/">签证</a></li>
 	            <li data-type="wifi"><a href="http://www.mafengwo.cn/localdeals/0-0-0-21-0-0-0-0.html">全球WiFi</a></li>
-	            <li data-type="cruise"><a href="http://www.mafengwo.cn/sales/0-0-0-5-0-0-0-0.html">邮轮</a></li>
+	            <li data-type="cruise"><a href="http://www.mafengwo.cn/sales/0-0-0-5-0-0-0-0.html">邮轮</a></li>       
 	        </ul>
 	    </div>
-	
 	</div>
+	<!-- 新自由行菜单 end -->
 </div>
 
 

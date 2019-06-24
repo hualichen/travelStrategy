@@ -1,6 +1,7 @@
 package com.service;
 
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -11,12 +12,13 @@ import com.entity.Notice;
 
 @Service
 public class NoticeService {
+	
 	@Resource
 	NoticeDao noticeDao;
 
 	//查询所有公告
-	public List<Notice> findNotice(){
-		return noticeDao.findNotice();
+	public List<Map<String,Object>> findNotice(String noTitle,Integer page){
+		return noticeDao.findNotice(noTitle,(page-1)*9);
 	}
 	//按照公告id查询
 	public Notice findByNoid(Integer noid) {
@@ -33,6 +35,9 @@ public class NoticeService {
 	//修改公告状态
 	public int updNoticeState(Integer noid,Integer noState) {
 		return noticeDao.updNoticeState(noid, noState);
+	}
+	public Integer countNotice() {
+		return noticeDao.countNotice();
 	}
 
 }
