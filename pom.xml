@@ -2,8 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com</groupId>
   <artifactId>Maven1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <properties>
+  <version>0.0.1-SNAPSHOT</version>  
+  <properties>    
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <!-- 父级依赖关系 --> 
@@ -19,7 +19,7 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 	  <!-- 数据库 -->
-	  	<dependency>
+	  	<dependency> 
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.22</version>
