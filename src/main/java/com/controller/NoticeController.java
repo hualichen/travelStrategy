@@ -26,19 +26,13 @@ public class NoticeController {
 			session.setAttribute("pageNum",1);
 		}else {
 			if(page.equals("up")) {
-				System.out.println("up");
 				Integer num=(Integer) session.getAttribute("pageNum");
-				System.out.println(num+"num");
-				System.out.println(num+1>0?num+1:1+"numsize");
 				model.addAttribute("noticeInfo", noticeService.findNotice(noTitle, num-1>0?num-1:1));
 				session.setAttribute("pageNum", num-1>0?num-1:1);
 			}else if(page.equals("down")) {
-				System.out.println("down");
 				Integer count =noticeService.countNotice();
 				count=count%9==0?count/9:count/9+1;
-				System.out.println("count"+count);
 				Integer num=(Integer) session.getAttribute("pageNum");
-				System.out.println(num+"num");
 				model.addAttribute("noticeInfo", noticeService.findNotice(noTitle, num+1<=count?num+1:count));
 				session.setAttribute("pageNum",  num+1<=count?num+1:count);
 			}
@@ -49,6 +43,7 @@ public class NoticeController {
 	@RequestMapping("updNoState")
 	@ResponseBody
 	public String updNoState(Integer noid,Integer noState) {
+		System.out.println(noid+"++++++++++"+noState);
 		noticeService.updNoticeState(noid, noState);
 		return "1";
 	}

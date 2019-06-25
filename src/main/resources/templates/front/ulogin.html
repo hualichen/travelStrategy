@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html  xmlns:th="http://www.thymeleaf.org">
 <head>
-<base href="http://localhost:8081/users"/>
+<base href="http://localhost:8081/"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>登录</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta name="renderer" content="webkit" />
+<script type="text/javascript" src="front/js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	function sub(){
+		var con=$("#content").html();
+		$.ajax({
+			url:"texts",
+			type:"post",
+			data:{"str":con},	
+			success:function(data){
+				window.location.href="http://localhost:8081/toPage?url=front/ulogin";
+			}
+		});
+	}
+	function ccc(){
+		$.ajax({
+			url:"text2",
+			type:"post",
+			success:function(data){
+				$("#cc").html(data);
+			}
+		});
+	}
+</script>
 </head>
 <body>
-	<form action="users/user_login" >
-		<input type="text" name="usName"/><br/>
-		<input type="text" name="usPwd"/><br/>
-		<input type="submit" value="登录"/> <br/>
-	</form>
+	<input type="button" value="保存" onclick="sub()"/>
+	<input type="button" value="保存" onclick="ccc()"/>
+	<div id="content">
+		<h1>标题1</h1>
+		<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+		<br/>
+		<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+		<hr/>
+		<h2>标题2</h2>
+		<table>
+			<tr>
+				<td>张三</td>
+				<td>男</td>
+			</tr>
+			<tr>
+				<td>李四</td>
+				<td>男</td>
+			</tr>
+		</table>
+	</div>
+	<br/><br/><br/>
+	<div id="cc"></div>
 </body>
 </html>

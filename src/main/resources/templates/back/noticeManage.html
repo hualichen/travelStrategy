@@ -79,7 +79,7 @@
 				data:{"noid":noid,
 					"noState":noState==1?0:1},	
 				success:function(data){
-					window.location.href="http://localhost:8081/notice/findNoticeAll";
+					window.location.href="http://localhost:8081/notice/findNoticeAll?page=on";
 				}
 			});
 		}
@@ -185,7 +185,7 @@
 	            <td th:text="${#dates.format(notice.noTime,'yyyy-MM-dd')}">2018-01-10</td> 
 	            <td th:text="${notice.noState==1?'已禁用':'已启用'}" th:id="${notice.noState==1?'forbidden':'using'}">启用</td>  
 				<th class="center">
-			        <input type="button"  th:value="${notice.noState==1?'启用':'禁用'}" class="group_btn" th:onclick="|updState('${notice.noid}','${notice.noState}')|"/>
+			        <input type="button" th:value="${notice.noState==1?'启用':'禁用'}" class="group_btn" th:onclick="|updState('${notice.noid}','${notice.noState}')|"/>
 		        </th>
             </tr>  
         </table>
