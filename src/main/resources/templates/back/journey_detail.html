@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<base href="http://localhost:8081/"/>
+
+<title>后台管理系统</title>
+<meta name="author" content="DeathGhost" />
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="back/css/style.css"/>
+<script src="back/js/jquery.js"></script>
+<script src="back/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+	(function($){
+		$(window).load(function(){	
+			$("a[rel='load-content']").click(function(e){
+				e.preventDefault();
+				var url=$(this).attr("href");
+				$.get(url,function(data){
+					$(".content .mCSB_container").append(data); //load new content inside .mCSB_container 
+					$(".content").mCustomScrollbar("scrollTo","h2:last");
+				});
+			});
+			$(".content").delegate("a[href='top']","click",function(e){
+				e.preventDefault();
+				$(".content").mCustomScrollbar("scrollTo",$(this).attr("href"));
+			});
+		});
+	})(jQuery);
+</script>
+</head>
+<body>
+<!--header-->
+<header>
+	<h1><img src="back/images/admin_logo.png"/></h1>
+	<ul class="rt_nav">
+		<li><a href="http://www.mycodes.net" target="_blank" class="website_icon">站点首页</a></li>
+		<li><a href="#" class="clear_icon">清除缓存</a></li>
+		<li><a href="#" class="admin_icon">DeathGhost</a></li>
+		<li><a href="#" class="set_icon">账号设置</a></li>
+		<li><a href="toPage?url=back/blogin"  class="quit_icon">安全退出</a></li>
+	</ul>
+</header>
+<aside class="lt_aside_nav content mCustomScrollbar">
+	<h2><a href="toPage?url=back/bindex" >起始页</a></h2>
+	<ul>
+ 		<li>
+			<dl>
+				<dt>常用布局示例</dt>
+				<dd><a href="toPage?url=back/product_list"  class="active">商品列表示例</a></dd>
+				<dd><a href="toPage?url=back/product_detail" >商品详情示例</a></dd>
+				<dd><a href="toPage?url=back/recycle_bin" >商品回收站示例</a></dd>
+			</dl>
+		</li>
+  		<li>
+   			<dl>
+			    <dt>订单信息</dt>
+			    <dd><a href="toPage?url=back/order_list" >订单列表示例</a></dd>
+			    <dd><a href="toPage?url=back/order_detail" >订单详情示例</a></dd>
+   			</dl>
+  		</li>
+ 		<li>
+   			<dl>
+			    <dt>会员管理</dt>
+			    <dd><a href="toPage?url=back/user_list" >会员列表示例</a></dd>
+			    <dd><a href="toPage?url=back/user_detail" >添加会员（详情）示例</a></dd>
+			    <dd><a href="toPage?url=back/user_rank" >会员等级示例</a></dd>
+			    <dd><a href="toPage?url=back/adjust_funding" >会员资金管理示例</a></dd>
+   			</dl>
+  		</li>
+  		<li>
+   			<dl>
+			    <dt>基础设置</dt>
+			    <dd><a href="toPage?url=back/setting" >站点基础设置示例</a></dd>
+   			</dl>
+  		</li>
+  		<li>
+   			<dl>
+			    <dt>配送与支付设置</dt>
+			    <dd><a href="toPage?url=back/express_list" >配送方式</a></dd>
+			    <dd><a href="toPage?url=back/pay_list" >支付方式</a></dd>
+   			</dl>
+  		</li>
+  		<li>
+		   <dl>
+			   <dt>在线统计</dt>
+			   <dd><a href="toPage?url=back/discharge_statistic" >流量统计</a></dd>
+			   <dd><a href="toPage?url=back/sales_volume" >销售额统计</a></dd>
+		   </dl>
+  		</li>
+	    <li>
+	    	<p class="btm_infor">© DeathGhost.cn 版权所有</p>
+	    </li>
+	</ul>
+</aside>
+
+<section class="rt_wrap content mCustomScrollbar">
+	<div class="rt_content">
+		<div class="page_title">
+        	<h2 class="fl"></h2>
+        </div>
+        <section>
+        <form action="Journey/add" method="post">
+        <ul class="ulColumn2">
+	        <li>
+		        <span class="item_name" style="width:120px;">行程标题：</span>
+		        <input type="text" name="joTitle" class="textbox textbox_225" placeholder="行程标题..."/>
+        	</li>
+	        <li>
+		        <span class="item_name" style="width:120px;">景区/地区：</span>
+		        <input type="text" name="scid" class="textbox textbox_295" placeholder="景区/地区..."/>
+	        </li>
+	         <li>
+		        <span class="item_name" style="width:120px;">最佳时间：</span>
+		        <select class="select" id="bestTime" name="bestTime">
+		        	<option>选择月份</option>
+		        	<option value="1月">1月</option>
+		        	<option value="2月">2月</option>
+		        	<option value="3月">3月</option>
+		        	<option value="4月">4月</option>
+		        	<option value="5月">5月</option>
+		        	<option value="6月">6月</option>
+		        	<option value="7月">7月</option>
+		        	<option value="8月">8月</option>
+		        	<option value="9月">9月</option>
+		        	<option value="10">10月</option>
+		        	<option value="11">11月</option>
+		        	<option value="12">12月</option>
+		        </select>
+	        </li>
+	         <li>
+		        <span class="item_name" style="width:120px;">天数：</span>
+		        <input type="text" name="joDays" class="textbox textbox_20" />天
+	        </li>
+	        <li>
+		        <span class="item_name" style="width:120px;">总结：</span>
+		        <textarea placeholder="总结" name="summary" class="textarea" style="height:50px;width:640px;"></textarea>
+	        </li>
+	        <li>
+		        <span class="item_name" style="width:120px;"></span>
+		        <input type="submit" class="link_btn" value="保存"/>
+	        </li>
+        </ul>
+        </form>
+	</section>
+ </div>
+</section>
+</body>
+</html>

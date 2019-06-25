@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.JourneyDao">
+	<!-- 定义全局的SQL语句 -->
+	<sql id="j_sql">
+		SELECT * FROM journey
+	</sql>
+	 <insert id="add1" parameterType="Journey">
+		<selectKey keyColumn="joid" keyProperty="joid" order="AFTER" resultType="Integer">
+			SELECT Max(joid) FROM journey
+		</selectKey>
+		insert into journey 
+		(joid,joTitle,scid,bestTime,joDays,summary,joState) 
+		values
+		(null,#{joTitle}, #{scid},#{bestTime},#{joDays},#{summary},0)
+	</insert> 
+</mapper>

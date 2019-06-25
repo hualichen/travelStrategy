@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.JourneyDetailsDao">
+	<!-- 定义全局的SQL语句 -->
+	<sql id="j_sql">
+		SELECT * FROM journeydetails
+	</sql>
+	
+	
+	<insert id="addjoid" parameterType="JourneyDetails">
+		insert into journeydetails
+		(jdid,scid,joid,describes,scenicimg,tickets,catering,foodimgs,stay,traffic,day,path)
+		values
+		(null,null,#{joid},null,null,null,null,null,null,null,null,null)
+	</insert> 
+	 <insert id="add" parameterType="JourneyDetails">
+		insert into journeydetails
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="scid != null and scid != '' ">
+				scid,
+			</if>
+			<if test="joid != null and joid != '' ">
+				joid,
+			</if>
+			<if test="describes != null and describes != '' ">
+				playTime,
+			</if>
+			<if test="scenicimg != null and scenicimg != '' ">
+				bestTime,
+			</if>
+			<if test="tickets != null and tickets != '' ">
+				joDays,
+			</if>
+			<if test="catering != null and catering != '' ">
+				catering,
+			</if>
+			<if test="foodimgs != null and foodimgs != '' ">
+				foodimgs,
+			</if>
+			<if test="stay != null and stay != '' ">
+				stay,
+			</if>
+			
+			<if test="traffic != null and traffic != '' ">
+				traffic,
+			</if>
+			<if test="day != null and day != '' ">
+				day,
+			</if>
+			
+			<if test="path != null and path != '' ">
+				path,
+			</if>
+		</trim>
+		<trim prefix="values(" suffix=")" suffixOverrides=",">
+			<if test="scid != null and scid != '' ">
+				#{scid},
+			</if>
+			<if test="joid != null and joid != '' ">
+				#{joid},
+			</if>
+			<if test="describes != null and describes != '' ">
+				#{playTime},
+			</if>
+			<if test="scenicimg != null and scenicimg != '' ">
+				#{bestTime,
+			</if>
+			<if test="tickets != null and tickets != '' ">
+				#{joDays},
+			</if>
+			<if test="catering != null and catering != '' ">
+				#{catering},
+			</if>
+			<if test="foodimgs != null and foodimgs != '' ">
+				#{foodimgs},
+			</if>
+			<if test="stay != null and stay != '' ">
+				#{stay},
+			</if>
+			
+			<if test="traffic != null and traffic != '' ">
+				#{traffic},
+			</if>
+			<if test="day != null and day != '' ">
+				#{day},
+			</if>
+			
+			<if test="path != null and path != '' ">
+				#{path},
+			</if>
+		</trim>
+	</insert> 
+</mapper>
