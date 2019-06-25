@@ -15,10 +15,11 @@ function createCode(){
        var charIndex = Math.floor(Math.random()*60);      
       code +=selectChar[charIndex];
     }      
-    if(code.length != codeLength){      
+    if(code.length != codeLength){ 
       createCode();      
     }
-    showCheck(code);
+    document.getElementById("code").value=code;
+    showCheck(code);   
 }
           
 function validate () {
@@ -27,19 +28,19 @@ function validate () {
     if(inputCode.length <=0) {
       document.getElementById("J_codetext").setAttribute("placeholder","输入验证码");
       createCode();
-      return false;
+      return 1;
     }
     else if(inputCode != codeToUp ){
       document.getElementById("J_codetext").value="";
       document.getElementById("J_codetext").setAttribute("placeholder","验证码错误");
       createCode();
-      return false;
+      return 2;
     }
     else {
       window.open(document.getElementById("J_down").getAttribute("data-link"));
       document.getElementById("J_codetext").value="";
       createCode();
-      return true;
+      return 3;
     }
 
 }
