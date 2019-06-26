@@ -18,8 +18,10 @@ public class UsersController {
 	
 	@RequestMapping("user_login")
 	public String user_login(String usName,String usPwd,HttpSession session) {
+		System.out.println(usName+"  "+usPwd);
 		System.out.println("登录");
 		Users userinfo = usersService.userLogin(usName, usPwd);
+		System.out.println(userinfo);
 		if(userinfo!=null) {
 			session.setAttribute("userinfo", userinfo);
 			Users attribute = (Users) session.getAttribute("userinfo");

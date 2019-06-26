@@ -79,7 +79,7 @@
 				data:{"noid":noid,
 					"noState":noState==1?0:1},	
 				success:function(data){
-					window.location.href="http://localhost:8081/notice/findNoticeAll?page=on";
+					window.location.href="http://localhost:8081/notice/findNoticeAll";
 				}
 			});
 		}
@@ -108,7 +108,7 @@
 				<dd><a href="toPage?url=back/product_list"  class="active">商品列表示例</a></dd>
 				<dd><a href="toPage?url=back/product_detail" >商品详情示例</a></dd>
 				<dd><a href="toPage?url=back/recycle_bin" >商品回收站示例</a></dd>
-				<dd><a href="notice/findNoticeAll" >公告管理</a></dd>
+				<dd><a href="notice/findNoticeAll?page=1">公告管理</a></dd>
 			</dl>
 		</li>
   		<li>
@@ -169,7 +169,7 @@
         </section>
         <table class="table">
 	        <tr>
-		        <th>公告编号</th>
+		        <!-- <th>公告编号</th> -->
 		        <th>公告标题</th>
 		        <th>公告内容</th>
 		        <th>发布人</th>
@@ -178,7 +178,7 @@
 		        <th>操作</th>
 	        </tr>
             <tr  th:each="notice : ${noticeInfo}" align="center">  
-	            <td th:text="${notice.noid}">1</td>
+			<!-- <td th:text="${notice.noid}">1</td> -->
 	            <td th:text="${notice.noTitle}">公告</td>
 	            <td th:text="${notice.noContent}">游乐攻略可以写笔记了</td>
 	            <td th:text="${notice.admName}"> 张三</td>
@@ -189,10 +189,26 @@
 		        </th>
             </tr>  
         </table>
+        <br/>
         <aside class="paging">
-        	<form action="notice/findNoticeAll"></form>
-	        <a href="notice/findNoticeAll?page=up">上一页</a>
-		    <a href="notice/findNoticeAll?page=down">下一页</a>
+			<span th:switch="${page}">
+				<span th:case="1">
+					<!-- <a href="notice/findNoticeAll?page=up">上一页</a> -->
+					<a th:href="@{notice/findNoticeAll?page=1}">上一页</a>		
+				</span>
+				<span th:case="*">
+					<a th:href="@{notice/findNoticeAll(page=${page-1})}">上一页</a>
+				</span>
+			</span>
+			<span th:switch="${page}">
+				<span th:case="${count}">
+					<!-- <a href="notice/findNoticeAll?page=up">上一页</a> -->
+					<a th:href="@{notice/findNoticeAll(page=${count})}">下一页</a>		
+				</span>
+				<span th:case="*">
+					<a th:href="@{notice/findNoticeAll(page=${page+1})}">下一页</a>
+				</span>
+			</span>	     
         </aside>
 	</div>
 </section>

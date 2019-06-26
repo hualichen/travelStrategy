@@ -20,30 +20,18 @@ public class NoticeController {
 	NoticeService noticeService;
 	
 	@RequestMapping("findNoticeAll")
-	public String findNoticeAll(Model model,String noTitle,String page,HttpSession session) {
-		if(page.equals("on")) {
-			model.addAttribute("noticeInfo", noticeService.findNotice(noTitle, 1));
-			session.setAttribute("pageNum",1);
-		}else {
-			if(page.equals("up")) {
-				Integer num=(Integer) session.getAttribute("pageNum");
-				model.addAttribute("noticeInfo", noticeService.findNotice(noTitle, num-1>0?num-1:1));
-				session.setAttribute("pageNum", num-1>0?num-1:1);
-			}else if(page.equals("down")) {
-				Integer count =noticeService.countNotice();
-				count=count%9==0?count/9:count/9+1;
-				Integer num=(Integer) session.getAttribute("pageNum");
-				model.addAttribute("noticeInfo", noticeService.findNotice(noTitle, num+1<=count?num+1:count));
-				session.setAttribute("pageNum",  num+1<=count?num+1:count);
-			}
-		}
+	public String findNoticeAll(Model model,String noTitle,Integer page,HttpSession session) {
+		Integer count =noticeService.countNotice();
+		model.addAttribute("count",count%5==0?count/5:count/5+1);
+		System.out.println(count%5==0?count/5:count/5+1);
+		model.addAttribute("page", page);
+		model.addAttribute("noticeInfo", noticeService.findNotice(noTitle,page ));
 		return "back/noticeManage";
 	}
 	
 	@RequestMapping("updNoState")
 	@ResponseBody
 	public String updNoState(Integer noid,Integer noState) {
-		System.out.println(noid+"++++++++++"+noState);
 		noticeService.updNoticeState(noid, noState);
 		return "1";
 	}

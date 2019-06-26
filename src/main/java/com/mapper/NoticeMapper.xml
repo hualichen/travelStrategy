@@ -11,7 +11,7 @@
 			where n.noTitle like concat('%',#{param1},'%')
 		</if>
 		<if test="param2!=null">
-			limit #{param2},9
+			limit #{param2},5
 		</if>
 	</select>
 	<!-- 按照id查询公告 -->

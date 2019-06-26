@@ -19,8 +19,6 @@ public class AdminsController {
 	@RequestMapping("login")
 	@ResponseBody
 	public String login(String admName,String admPwd,HttpSession session) {
-		System.out.println("登陆");
-		System.out.println(admName+"1234"+admPwd);
 		session.setAttribute("admName",admName);
 		int res=adm.login(admName, admPwd);
 		return res==1?"yes":"no";

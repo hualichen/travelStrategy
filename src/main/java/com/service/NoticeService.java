@@ -18,7 +18,7 @@ public class NoticeService {
 
 	//查询所有公告
 	public List<Map<String,Object>> findNotice(String noTitle,Integer page){
-		return noticeDao.findNotice(noTitle,(page-1)*9);
+		return noticeDao.findNotice(noTitle,(page-1)*5);
 	}
 	//按照公告id查询
 	public Notice findByNoid(Integer noid) {

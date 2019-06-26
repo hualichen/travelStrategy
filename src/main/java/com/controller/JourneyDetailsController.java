@@ -23,7 +23,6 @@ public class JourneyDetailsController {
 	}
 	@RequestMapping("update")
 	public String update(JourneyDetails j) {
-		System.out.println(j);
 		journeyDetailsService.update(j);
 		return "back/bindex";
 	}

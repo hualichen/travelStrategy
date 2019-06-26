@@ -22,7 +22,7 @@ public class SigninController {
 	//签到
 	@RequestMapping("signin")
 	@ResponseBody
-	public Integer signin(HttpSession session) throws Exception {
+	public Integer signin(HttpSession session) {
 		Integer tag=-1;
 		Users userinfo=(Users) session.getAttribute("userinfo");
 		//已经登录
